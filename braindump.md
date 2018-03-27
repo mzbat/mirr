@@ -1,13 +1,13 @@
 # Mock Interview & Resume Review Workshop
 
-##Background
+## Background
 September 2016, I tweeted that I'd volunteer time to help a few people at DerbyCon who struggle with anxiety during interviews. I'd just come off of a 2 week hiring sprint and saw a lot of candidates with great technical skills who failed miserably when it came to answering "soft" questions. I thought spending a couple of hours with struggling folks at DerbyCon would be a simple way to give back to the community that's given me so much.
 
 Response was overwhelming and it became pretty clear that the community needed more help than I would be able to give in a few short hours. I published 2 Google forms - One for volunteers to help and the other for participants. Somewhere along the way, DerbyCon organizers caught wind of the project and generously offered a room to conduct mock interviews and resume reviews. Just like that, a workshop was born.
 
 I'm setting up this Gist with the hope that sharing my format, forms, guidelines, and lessons learned will inspire folks to take the lead on this endeavor at other conferences (I'm looking at you, BSides organizers). The need is there and plenty of people are willing to help. My hope is that putting my experience out there will encourage others to conduct, improve, and expand this workshop througout the Infosec community.
 
-##Format
+## Format
 
 1. Google Form - Volunteer Interviewer
   * Interviewer criteria (this isn't a place to practice interviewing skills - experience required)
