@@ -17,7 +17,7 @@ I'm setting up this Gist with the hope that sharing my format, forms, guidelines
   * Resume (printed copy or laptop - no thumb drives)
   * Narrow to one or two areas that need the most work
   
-3. Space - Room should accomodate separate tables for participants to ensure a bit of comfort and privacy.
+3. Space - Room should accommodate separate tables for participants to ensure a bit of comfort and privacy.
 
 4. Badges - This is up to the organizer, but I found it helpful to have unique badge for volunteers so participants could spot them.
 
