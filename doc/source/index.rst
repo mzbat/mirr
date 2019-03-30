@@ -16,3 +16,5 @@ Welcome to mirr's documentation!
    imposter_syndrome
    media_blurbs_and_write_ups
    survival_kits
+   tech_guide_question_prompts
+   MockJobs/*
