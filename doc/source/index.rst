@@ -10,7 +10,14 @@ Welcome to mirr's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+  braindump
+  childcare
+  core_values
+  day_of_checklist
+  helpful_links
+  imposter_syndrome
+  media_blurbs_and_write_ups
+  survival_kits
 
 Indices and tables
 ==================
