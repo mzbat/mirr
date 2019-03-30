@@ -3,7 +3,7 @@
 
 from flask import Flask
 
-app = Flask(__name__, static_url_path='/', static_folder='_build/html/')
+app = Flask(__name__, static_url_path='/', static_folder='/app/doc/build/html')
 
 @app.route('/')
 @app.route('/<path:path>')
@@ -12,4 +12,4 @@ def serve_sphinx_docs(path='index.html'):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0",debug=True)

@@ -3,6 +3,6 @@ ADD . /app
 WORKDIR /app
 #USER mzbat:mzbat
 
-RUN pip3 install --upgrade pip
+#RUN pip3 install --upgrade pip
 RUN pip3 install -rrequirements.txt
-#CMD ["python", "mirr"]
+CMD ["python3", "mirr/mirr.py"]
