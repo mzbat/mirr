@@ -1,6 +1,10 @@
-#!/usr/bin/python3
 # -*- coding: utf-8 -*-
+"""
+  Mock Interview & Resume Workshop application
 
+  :copyright: (c) by Franklin Diaz
+  :license: MIT
+"""
 from flask import Flask
 
 app = Flask(__name__, static_url_path='/', static_folder='/app/doc/build/html')
