@@ -1,4 +1,6 @@
-Interview guide - Security Architect < Systems Architecture < Securely Provision
+====================================
+Interview guide - Security Architect
+====================================
 
 5mins - interviewer reviews CV without interviewee interaction.
 20-40mins - Interview

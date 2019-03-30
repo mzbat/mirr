@@ -17,4 +17,12 @@ Welcome to mirr's documentation!
    media_blurbs_and_write_ups
    survival_kits
    tech_guide_question_prompts
-   MockJobs/*
+   MockJobs/cyber_defence_analyst.rst
+   MockJobs/cyber_defence_analyst_interview_guide.rst
+   MockJobs/cyber_workforce.rst
+   MockJobs/cyber_workforce_interview_guide.rst
+   MockJobs/exploitation_analyst.rst
+   MockJobs/exploitation_analyst_interview_guide.rst
+   MockJobs/security_architect.rst
+   MockJobs/security_architect_interview_guide.rst
+   MockJobs/security_engineer_arc.rst

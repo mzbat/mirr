@@ -1,4 +1,7 @@
+=====================
 SOC/Blue team analyst
+=====================
+
 Cyber Defense Analyst < PR-CDA-001 <Cyber Defense Analysis < Protect and Defend
 Uses data collected from a variety of cyber defense tools (e.g., IDS alerts, firewalls, network traffic logs) to analyze events that occur within their environments for the purposes of mitigating threats.
 
