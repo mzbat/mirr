@@ -5,10 +5,12 @@
   :copyright: (c)2019 by @mzbat
   :license: CCC 1.0
 """
-from flask import Flask
+import os
+from flask import Flask, render_template, request, redirect, url_for
+
+app = Flask(__name__, static_url_path='/', static_folder='/app/doc/build/html')
 
 def create_app(debug):
-    app = Flask(__name__, static_url_path='/', static_folder='/app/doc/build/html')
     app.config.from_mapping(
         SECRET_KEY = os.environ.get('SECRET_KEY') or 'dev_key'
     )

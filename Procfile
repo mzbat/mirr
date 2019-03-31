@@ -1,1 +1,1 @@
-web: gunicorn --chdir mirr:app'
+web: gunicorn --chdir mirr mirr:app'
