@@ -1,1 +1,1 @@
-web: gunicorn --chdir mirr mirr:'create_app()'
+web: gunicorn --chdir mirr:app'
