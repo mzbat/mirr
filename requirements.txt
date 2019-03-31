@@ -1,3 +1,4 @@
 sphinx
 flask
 gunicorn
+python-dotenv

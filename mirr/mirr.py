@@ -2,18 +2,30 @@
 """
   Mock Interview & Resume Workshop application
 
-  :copyright: (c) by Franklin Diaz
-  :license: MIT
+  :copyright: (c)2019 by @mzbat
+  :license: CCC 1.0
 """
-from flask import Flask
+import os
+from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__, static_url_path='/', static_folder='/app/doc/build/html')
 
+def create_app(debug):
+    app.config.from_mapping(
+        SECRET_KEY = os.environ.get('SECRET_KEY') or 'dev_key'
+    )
+
+    return app
+
 @app.route('/')
 @app.route('/<path:path>')
-def serve_sphinx_docs(path='index.html'):
+def index(path='index.html'):
     return app.send_static_file(path)
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",debug=False)
+    app = create_app(debug=True)
+    app.run(host="0.0.0.0")
