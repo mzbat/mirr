@@ -1,4 +1,5 @@
 .DS_Store
+doc/build/doctrees/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -12,7 +13,6 @@ __pycache__/
 .Python
 env/
 .env
-build/
 develop-eggs/
 dist/
 downloads/
