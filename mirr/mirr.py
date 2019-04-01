@@ -8,13 +8,10 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for
 
-app = Flask(__name__, static_folder='/app/doc/build/html')
+app = Flask(__name__)
 
 def create_app(debug):
     app.debug = debug
-    app.config.from_mapping(
-        SECRET_KEY = os.environ.get('SECRET_KEY') or 'dev_key'
-    )
     return app
 
 @app.route('/')
@@ -27,5 +24,5 @@ def page_not_found(e):
     return render_template('404.html'), 404
 
 if __name__ == '__main__':
-    app = create_app(debug=False)
+    app = create_app(debug=True)
     app.run(host="0.0.0.0")
