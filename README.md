@@ -35,6 +35,7 @@ The documents can be rendered in may popular formats using Sphinx.
 - type "make" from top level of this repo
     - this will install needed packages inside a container
     - you will be "inside" the container after typing make
+    - Flask will render the website for you at this link: http://0.0.0.0:5000/
 - type "cd doc" in the docker container
 - type "make html" in the docker container
     - this generates html pages 
