@@ -1,3 +1,8 @@
+REQS := requirements.txt
+# Used for colorizing output of echo messages
+BLUE := "\\033[1\;36m"
+NC := "\\033[0m" # No color/default
+
 define PRINT_HELP_PYSCRIPT
 import re, sys
 
@@ -26,6 +31,21 @@ clean: ## Cleanup all the things
 	find . -name '__pycache__' | xargs rm -rf
 
 local-dev: ## Run application locally
-	@echo "\033[1;33mBuilding MIRR Application...hang tight!\033[0m"
+	$(MAKE) print-status MSG="Building MIRR Application...hang tight!"
 	docker-compose up --build resume_workshop
 	#docker-compose run resume_workshop /bin/bash
+
+print-status:
+	@:$(call check_defined, MSG, Message to print)
+	@echo "$(BLUE)$(MSG)$(NC)"
+
+python: ## set up the python environment
+	$(MAKE) print-status MSG="Set up the Python environment"
+	LD_LIBRARY_PATH=/usr/local/lib python3 -m venv myvenv
+	. myvenv/bin/activate; \
+	LD_LIBRARY_PATH=/usr/local/lib python3 -m pip install wheel; \
+	LD_LIBRARY_PATH=/usr/local/lib python3 -m pip install -r$(REQS)
+
+test: python ## test the flask app
+	$(MAKE) print-status MSG="Test the Flask App"
+	python3 -m pytest .

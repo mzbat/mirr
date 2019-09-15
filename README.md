@@ -1,11 +1,9 @@
 # Mock Interview Resume Workshop
 
-This is the repository for the Mock Interview and Resume Review Workshop established at Derby Con 2015. 
-The purpose of this github [brain dump](https://github.com/mzbat/mirr/blob/master/braindump) is to provide i
-tools & insights for folks who want to conduct MIRR workshops in their local communities.
+This is the repository for the Mock Interview and Resume Review Workshop established at Derby Con 2015.
+The purpose of this github [brain dump](https://github.com/mzbat/mirr/blob/master/braindump) is to provide tools & insights for folks who want to conduct MIRR workshops in their local communities.
 
-[The link to the formatted web version](https://mock-interview-resume-review.herokuapp.com/) 
-is on [StabOps.com](https://stabops.com/)
+[The link to the formatted web version](https://mock-interview-resume-review.herokuapp.com/) is on [StabOps.com](https://stabops.com/)
 
 ## Contributing  
 
@@ -24,7 +22,7 @@ These are the steps:
 
 ## Generating Documents
 
-The original source documents in this repo are in the doc/source directory in a .rst format. 
+The original source documents in this repo are in the doc/source directory in a .rst format.
 
 The documents can be rendered in may popular formats using Sphinx. 
 (More information about Sphinx)[http://www.sphinx-doc.org/en/1.8/index.html]
