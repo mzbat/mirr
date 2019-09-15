@@ -12,12 +12,12 @@ These are the steps:
 
 1. Fork this repo
 2. Make a clone of your fork
-3. Create a branch ot make changes in. 
+3. Create a branch ot make changes in.
 4. Make changes in your branch
     - modify
     - add comments and descriptions
 5. create a pull request
-6. Your changes will be reviewed and merged. 
+6. Your changes will be reviewed and merged.
 
 ## Generating Documents
 
