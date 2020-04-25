@@ -2,10 +2,12 @@ version: '3'
 services:
   resume_workshop:
     build:
-      context: .
-      dockerfile: Dockerfile
+      context: ..
+      dockerfile: docker/Dockerfile
     container_name: resume_workshop
     ports:
       - "5000:5000"
     volumes:
-      - .:/app
+      - ..:/app
+volumes:
+  ..:

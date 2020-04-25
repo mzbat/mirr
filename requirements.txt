@@ -2,3 +2,4 @@ sphinx
 flask
 gunicorn
 python-dotenv
+sphinx_rtd_theme
