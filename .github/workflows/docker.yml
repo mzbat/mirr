@@ -21,4 +21,4 @@ jobs:
         sudo apt -y install python3-setuptools
         make dev
     - name: Build the Heroku app via docker-compose
-        run: make docker
+      run: make docker
