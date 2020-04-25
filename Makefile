@@ -40,7 +40,7 @@ dev: python ## build docker container for testing
 docs: python ## Generate documentation
 	#sphinx-quickstart
 	cd docs && make html
-	git rm -rf mirr/static
+	git rm -rf mirr/static && mkdir mirr/static
 	cp -Rp docs/_build/html/* mirr/static
 
 docker: ## Run application locally
