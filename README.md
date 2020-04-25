@@ -1,6 +1,7 @@
 # Mock Interview Resume Workshop
 
 ![MIRR application](https://github.com/mzbat/mirr/workflows/MIRR%20application/badge.svg?branch=master)
+![Docker](https://github.com/mzbat/mirr/workflows/Docker/badge.svg?branch=master)
 
 
 This is the repository for the Mock Interview and Resume Review Workshop established at Derby Con 2015.
