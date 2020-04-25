@@ -1,0 +1,382 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tech Interview Guide - Security &mdash; Mock Interview Resume Review 0.1.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="SOC/Blue team analyst" href="../02-mockjobs/cyber_defence_analyst.html" />
+    <link rel="prev" title="Survival Kits" href="survival_kits.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Mock Interview Resume Review
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../00-introduction/introduction.html">Introduction</a></li>
+</ul>
+<p class="caption"><span class="caption-text">resources</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="braindump.html">Mock Interview &amp; Resume Review Workshop</a></li>
+<li class="toctree-l1"><a class="reference internal" href="childcare.html">Childcare</a></li>
+<li class="toctree-l1"><a class="reference internal" href="core_values.html">Core Values</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day_of_checklist.html">Day of Checklist</a></li>
+<li class="toctree-l1"><a class="reference internal" href="helpful_links.html">Helpful Links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="imposter_syndrome.html">Imposter Syndrome</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media_blurbs_and_write_ups.html">Twitter Blurb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="survival_kits.html">Survival Kits</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tech Interview Guide - Security</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#general-questions">General questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#questions-for-application-security-engineers-and-security-operations-engineers">Questions for Application Security Engineers and Security Operations Engineers</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">mockjobs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../02-mockjobs/cyber_defence_analyst.html">SOC/Blue team analyst</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-mockjobs/cyber_defence_analyst_interview_guide.html">Interview Guide - Cyber Defense Analyst</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-mockjobs/cyber_workforce.html">Cyber Security Project Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-mockjobs/cyber_workforce_interview_guide.html">Interview Guide - Cyber Workforce Developer and Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-mockjobs/exploitation_analyst.html">Red team tester</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-mockjobs/exploitation_analyst_interview_guide.html">Interview Guide - Exploitation Analyst</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-mockjobs/security_architect.html">IT Security Engineer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-mockjobs/security_architect_interview_guide.html">Interview guide - Security Architect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-mockjobs/security_engineer_arc.html">Security Engineer - ARC</a></li>
+</ul>
+<p class="caption"><span class="caption-text">development</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../03-development/quick_start.html">Quick Start</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Mock Interview Resume Review</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Tech Interview Guide - Security</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/01-resources/tech_guide_question_prompts.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tech-interview-guide-security">
+<h1>Tech Interview Guide - Security<a class="headerlink" href="#tech-interview-guide-security" title="Permalink to this headline">¶</a></h1>
+<p>For the following roles: Application Security Engineer, Penetration Tester, Security Operations
+Engineer.</p>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>The purpose of this guide is to help you get a taste of what interviewers may be looking for in a
+technical interview. The questions here are behavioral in nature, designed to get you talking
+about specific situations and how you handled them. Guidelines are suggested for evaluating
+the strength of the answers. Remember, these are just sample questions, but you need to start
+thinking about how you’ll answer story-type questions. These questions are designed to see
+how well you know what you’re doing, but also help gauge your commitment to a team
+environment and whether you’d be a cultural fit for the org.
+Remember to be as pleasant and friendly as you can be! Your interviewer is likely looking for
+confidence, but not over-confidence.</p>
+</div>
+<div class="section" id="general-questions">
+<h2>General questions<a class="headerlink" href="#general-questions" title="Permalink to this headline">¶</a></h2>
+<p>These questions cover commonalities about all security roles, and are for candidates in all three
+roles above (Application Security Engineer, Penetration Tester, Security Operations Engineer).
+Tell me about an existing security practice or process that you helped improve.
+What was the situation?
+What did you do? Why?
+What other options did you consider? Why did you decide on the path you took?
+What were the challenges along the way?
+What was the outcome? What did you learn?</p>
+<p>Warning Signs:
+Addresses practices/processes on an ad-hoc basis
+Can’t articulate trade-offs in the chosen approach.
+Did not analyze required change methodically
+Cannot demonstrate an improved outcome</p>
+<p>Great Signs:
+Understands and articulates how the change improved security posture
+Made changes systematically and broadly
+Understands and articulates required tradeoffs
+Makes methodical, data-driven changes to practice/policy
+Tell me about how you have worked with a team to remediate a security issue.
+What was the issue?
+What was the fix? What other approaches did you consider?
+How did you communicate with the rest of the team?
+How did you and the rest of the team stay aligned on the required work?
+What was the outcome? What did you learn?</p>
+<p>Warning signs:
+Did not make sure the problem was clearly understood by the rest of the team
+Did not make efforts to explain to the rest of the team, only highlight errors
+Failed to get results, or got results by escalating or manipulating the processFinds faults in teammates, or pulls “hero shifts”, rather than working collaboratively
+Adopts an “us and them” mentality between security and other teams</p>
+<p>Great signs:
+Communicated clearly throughout the process
+Worked to ensure high alignment continuously
+Adopts a team mentality about the fix
+Worked to increase the team’s understanding of the issue and fix
+Tell me about an innovative idea (i.e. a tool, practice, or policy) that you helped introduce.
+What was the new idea? What problem did it solve?
+How was the new idea an improvement on the previous thing?
+How did you manage the change?
+What was the outcome? What did you learn?</p>
+<p>Warning signs:
+Idea was implemented without consideration for others
+Used role / power rather than persuasion to implement
+Improvement was unsuccessful or incomplete
+Idea for “new for newness sake”, rather than showing a strong understanding of context</p>
+<p>Great signs:
+Achieved desired outcome
+Idea shows sensitivity to context and applicability
+Describe a situation where you disagreed with someone about a security issue.
+What was the issue? What was the disagreement?
+What was your point of view? What was theirs?
+How did you resolve the disagreement? What was the final decision?
+How did you feel about the outcome? How did the other party feel?
+What did you learn?</p>
+<p>Warning signs:
+Unable to articulate/empathize with the other point of view
+Disagreement not resolved
+Disagreement resolved through role power, escalation, or other non-collaborative method</p>
+<p>Great signs:
+Clearly understands and articulates both points of view
+Disagreement resolved amicably, to mutual satisfaction</p>
+</div>
+<div class="section" id="questions-for-application-security-engineers-and-security-operations-engineers">
+<h2>Questions for Application Security Engineers and Security Operations Engineers<a class="headerlink" href="#questions-for-application-security-engineers-and-security-operations-engineers" title="Permalink to this headline">¶</a></h2>
+<p>These questions are specifically for the Application Security Engineer and Security Operations
+Engineer roles.</p>
+<p>Tell me about a secure development practice (or tool) you helped introduce to an
+engineering team.
+What was the practice/tool? What problem did it solve?
+How was this an improvement on the previous thing?
+How did you teach people to use the new practice?
+What was the outcome? What did you learn?</p>
+<p>Warning signs:
+Unclear on the problem/issue the practice solvedNew practice was implemented without consideration for others
+Used role power rather than persuasion to implement</p>
+<p>Great signs:
+Achieved desired outcome
+Idea shows sensitivity to context and applicability
+Thinks carefully about how engineers learned
+Clear goals and measures for adoption</p>
+<p>Tell me about a security-related topic that you helped someone from a non-security
+background learn.
+What was the topic? How did you teach it?
+Who were you teaching? Why?
+Where did they get stuck? How did you help unstick them?
+What was the outcome? What did you learn?</p>
+<p>Warning signs:
+Does not describe topic clearly
+Did not tailor teaching strategy to individuals
+Shows disdain or mocks non-technical people</p>
+<p>Great signs:
+Understands and explains topic clearly
+Understands how to tailor strategy to different learning styles
+Shows empathy and understanding of different knowledge backgrounds
+Questions for Penetration Testers
+These questions are specifically for the Penetration Tester role.</p>
+<p>Tell me about a particularly interesting vulnerability that you discovered.
+What was the vulnerability? How did you find it?
+Where did you get stuck while researching the vulnerability? How did you get unstuck?
+How did you report the issue? How was the report received?
+What was the outcome? What did you learn?</p>
+<p>Warning signs:
+Doesn’t have a systematic approach (“lucked in” to the discovery)
+Vulnerability isn’t particularly novel or interesting
+Did not analyze in depth
+Reported the issue too broadly/narrowly</p>
+<p>Great signs:
+Is animated and excited when talking about the situation
+Has a system for discovering vulnerabilities
+Analyzed the issue in depth
+Vulnerability is especially novel: requires multiple steps, requires “out of the box” thinking, etc
+Communicated/reported the issue appropriately and effectively
+Tell me about a time when you reported an issue you discovered to a development team.
+What was the issue?
+How did you communicate that issue to the development team?
+What remediation steps did you suggest?
+What were the actual remediation steps taken? How and why did they differ?What was the outcome? What did you learn?</p>
+<p>Warning signs:
+Did not make sure the problem was clearly understood by the rest of the team
+Did not make efforts to explain to the rest of the team, only highlight errors
+Failed to get results, or got results by escalating or manipulating the process
+Adopts an “us and them” mentality between security and other teams</p>
+<p>Great signs:
+Communicated clearly throughout the process
+Adopts a team mentality about the fix
+Worked to increase the team’s understanding of the issue and fix</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../02-mockjobs/cyber_defence_analyst.html" class="btn btn-neutral float-right" title="SOC/Blue team analyst" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="survival_kits.html" class="btn btn-neutral float-left" title="Survival Kits" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, @mzbat
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

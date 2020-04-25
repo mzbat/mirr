@@ -1,3 +1,4 @@
+.PHONY: docker docs test
 REQS := requirements.txt
 # Used for colorizing output of echo messages
 BLUE := "\\033[1\;36m"
@@ -30,10 +31,22 @@ clean: ## Cleanup all the things
 	find . -name '*.pyc' | xargs rm -rf
 	find . -name '__pycache__' | xargs rm -rf
 
-local-dev: ## Run application locally
+dev: python ## build docker container for testing
+	$(MAKE) print-status MSG="Building with docker-compose"
+	@if [ -f /.dockerenv ]; then $(MAKE) print-status MSG="***> Don't run make dev inside docker container <***" && exit 1; fi
+	docker-compose -f docker/docker-compose.yml build resume_workshop
+	@docker-compose -f docker/docker-compose.yml run resume_workshop /bin/bash
+
+docs: python ## Generate documentation
+	#sphinx-quickstart
+	cd docs && make html
+	git rm -rf mirr/static
+	cp -Rp docs/_build/html/* mirr/static
+
+docker: ## Run application locally
+	@if [ -f /.dockerenv ]; then $(MAKE) print-status MSG="***> Don't run make docker inside docker container <***" && exit 1; fi
 	$(MAKE) print-status MSG="Building MIRR Application...hang tight!"
-	docker-compose up --build resume_workshop
-	#docker-compose run resume_workshop /bin/bash
+	docker-compose -f docker/docker-compose.yml up --build resume_workshop
 
 print-status:
 	@:$(call check_defined, MSG, Message to print)
@@ -41,11 +54,9 @@ print-status:
 
 python: ## set up the python environment
 	$(MAKE) print-status MSG="Set up the Python environment"
-	LD_LIBRARY_PATH=/usr/local/lib python3 -m venv myvenv
-	. myvenv/bin/activate; \
-	LD_LIBRARY_PATH=/usr/local/lib python3 -m pip install wheel; \
-	LD_LIBRARY_PATH=/usr/local/lib python3 -m pip install -r$(REQS)
+	if [ -f 'requirements.txt' ]; then pip3 install -rrequirements.txt; fi
 
 test: python ## test the flask app
 	$(MAKE) print-status MSG="Test the Flask App"
+	if [ -f 'test/requirements-test.txt' ]; then pip3 install -rtest/requirements-test.txt; fi
 	python3 -m pytest .

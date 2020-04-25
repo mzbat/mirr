@@ -2,7 +2,7 @@
 """
   Mock Interview & Resume Workshop application
 
-  :copyright: (c)2019 by @mzbat
+  :copyright: (c)2019, 2020 by @thedevilsvoice
   :license: CCC 1.0
 """
 import os
