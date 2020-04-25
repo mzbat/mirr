@@ -40,6 +40,8 @@ dev: python ## build docker container for testing
 docs: python ## Generate documentation
 	#sphinx-quickstart
 	cd docs && make html
+	git rm -rf mirr/static
+	cp -Rp docs/_build/html/* mirr/static
 
 docker: ## Run application locally
 	@if [ -f /.dockerenv ]; then $(MAKE) print-status MSG="***> Don't run make docker inside docker container <***" && exit 1; fi

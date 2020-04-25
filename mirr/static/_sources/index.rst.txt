@@ -7,22 +7,46 @@ Welcome to mirr's documentation!
 ================================
 
 .. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: introduction
+   
+   00-introduction/introduction
 
-   braindump
-   childcare
-   core_values
-   day_of_checklist
-   helpful_links
-   imposter_syndrome
-   media_blurbs_and_write_ups
-   survival_kits
-   tech_guide_question_prompts
-   MockJobs/cyber_defence_analyst.rst
-   MockJobs/cyber_defence_analyst_interview_guide.rst
-   MockJobs/cyber_workforce.rst
-   MockJobs/cyber_workforce_interview_guide.rst
-   MockJobs/exploitation_analyst.rst
-   MockJobs/exploitation_analyst_interview_guide.rst
-   MockJobs/security_architect.rst
-   MockJobs/security_architect_interview_guide.rst
-   MockJobs/security_engineer_arc.rst
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: resources
+
+   01-resources/braindump
+   01-resources/childcare
+   01-resources/core_values
+   01-resources/day_of_checklist
+   01-resources/helpful_links
+   01-resources/imposter_syndrome
+   01-resources/media_blurbs_and_write_ups
+   01-resources/survival_kits
+   01-resources/tech_guide_question_prompts
+
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: mockjobs
+ 
+   02-mockjobs/cyber_defence_analyst.rst
+   02-mockjobs/cyber_defence_analyst_interview_guide.rst
+   02-mockjobs/cyber_workforce.rst
+   02-mockjobs/cyber_workforce_interview_guide.rst
+   02-mockjobs/exploitation_analyst.rst
+   02-mockjobs/exploitation_analyst_interview_guide.rst
+   02-mockjobs/security_architect.rst
+   02-mockjobs/security_architect_interview_guide.rst
+   02-mockjobs/security_engineer_arc.rst
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: development
+
+   03-development/quick_start
